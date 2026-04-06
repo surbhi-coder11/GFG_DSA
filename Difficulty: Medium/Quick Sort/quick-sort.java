@@ -1,32 +1,31 @@
 class Solution {
     public void quickSort(int[] arr, int low, int high) {
         // code here
-        if(low<=high){
-            int mid = partition(arr,low,high);
-        
-        quickSort(arr,low,mid-1);
-        quickSort(arr,mid+1,high);
+        if(low>=high){
+            return;
         }
+        int pividx = partition(arr,low,high);
+        quickSort(arr,low,pividx-1);
+        quickSort(arr,pividx+1,high);
     }
 
     private int partition(int[] arr, int low, int high) {
         
         // code here
-        int piv = arr[high];
-        int i = (low-1);
-        
-        for(int j=low;j<high;j++){
-            if(arr[j]<=piv){
+        int i= low-1;
+        int pivot = arr[high];
+        for(int j=low;j<=high;j++){
+            if(arr[j]<pivot){
                 i++;
                 int temp = arr[j];
                 arr[j] = arr[i];
                 arr[i] = temp;
             }
         }
-        int temp = arr[high];
-        arr[high] = arr[i+1];
-        arr[i+1] = temp;
-        
-        return i+1;
+        i++;
+        int temp = pivot ;
+        arr[high] = arr[i];
+        arr[i] = temp;
+        return i;
     }
 }
