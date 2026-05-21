@@ -1,6 +1,5 @@
 class Solution {
     int countStrings(int n) {
-        // code here
         if (n == 1) return 2;
 
         int prev2 = 2; // f(1)
