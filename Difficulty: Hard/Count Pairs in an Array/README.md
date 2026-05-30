@@ -1,0 +1,8 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/count-pairs-in-an-array4145/1?page=3&difficulty=Hard&sortBy=submissions">Count Pairs in an Array</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 14pt;">Given an array arr[] (0-based indexing) of <strong>n</strong> integers, count all pairs ( arr[i], arr[j] ) in it such that :<br></span><span style="font-size: 14pt;"><strong> i * arr[i] &gt; j * arr[j] </strong>and <strong>0 ≤ i &lt; j &lt; n</strong>.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input : </strong>arr[] = {8, 4, 2, 1}
+<strong>Output : </strong>2<br><strong>Explanation: </strong>(1,3), (2,3) are the valid pairs.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input : </strong>arr[] = {5, 0, 10, 2, 4, 1, 6}
+<strong>Output: </strong>5
+<strong>Explanation : </strong>(2,3), (2,4), (2,5), (3,5), (4,5) are the valid pairs. </span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1<strong> </strong>≤ n&nbsp;≤<strong> </strong>10<sup>4</sup><br>0 ≤ arr[i] ≤<strong> </strong>10<sup>4</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Merge Sort</code>&nbsp;
